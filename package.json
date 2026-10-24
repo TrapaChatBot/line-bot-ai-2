@@ -1,0 +1,26 @@
+{
+  "name": "line-bot-ai-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrapaChatBot/line-bot-ai-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrapaChatBot/line-bot-ai-2/issues"
+  },
+  "homepage": "https://github.com/TrapaChatBot/line-bot-ai-2#readme",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@google/genai": "^2.31.0",
+    "@line/bot-sdk": "^11.3.0"
+  }
+}
