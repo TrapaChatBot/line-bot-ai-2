@@ -1,6 +1,9 @@
 import { messagingApi, validateSignature } from '@line/bot-sdk';
+import { logEnvStatus } from '../lib/env.js';
 import { answer } from '../lib/gemini.js';
 import { FALLBACK_REPLY } from '../lib/prompt.js';
+
+logEnvStatus();
 
 const client = new messagingApi.MessagingApiClient({
   channelAccessToken: process.env.LINE_CHANNEL_ACCESS_TOKEN,
