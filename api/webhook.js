@@ -11,6 +11,7 @@ const client = new messagingApi.MessagingApiClient({
 
 async function handleEvent(event) {
   if (event.type !== 'message' || !event.replyToken) return;
+  console.log(`event received: message type=${event.message.type}`);
 
   let text = FALLBACK_REPLY;
   if (event.message.type === 'text') {
@@ -25,6 +26,7 @@ async function handleEvent(event) {
     replyToken: event.replyToken,
     messages: [{ type: 'text', text: text.slice(0, 5000) }],
   });
+  console.log('replied');
 }
 
 export async function POST(request) {
